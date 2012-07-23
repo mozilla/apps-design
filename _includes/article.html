@@ -1,8 +1,9 @@
 {% include header.html %}
 
-<div class="content-wrapper articles">
-  <p class="date"><a href="{{ site.baseurl }}{{ article.url }}">{{ article.title }}</p>
-  <div class="article">{{ content }}</div>
-</div>
+{% include nav.html %}
+
+<article>
+  {{ content }}
+</article>
 
 {% include footer.html %}

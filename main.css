@@ -54,3 +54,24 @@ table {
     position: relative;
     width: 960px;
 }
+
+header, footer {
+    background-color: #eee;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+header div, footer div {
+    padding: 20px;
+}
+
+nav {
+    float: left;
+    width: 260px;
+}
+
+article {
+    float: left;
+    width: 700px;
+}

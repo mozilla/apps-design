@@ -1,4 +1,4 @@
 auto: true
 safe: true
-lsi: false
+permalink: /:title
 pygments: true
