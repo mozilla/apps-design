@@ -49,6 +49,10 @@ table {
 
 /* Main styles */
 
+body {
+    font-family: Arial;
+}
+
 .wrapper {
     margin: 0 auto;
     position: relative;
@@ -68,10 +72,34 @@ header div, footer div {
 
 nav {
     float: left;
-    width: 260px;
+    margin: 10px 10px 10px 0px;
+    width: 240px;
+}
+
+nav > ul > li {
+    margin-bottom: 2px;
+}
+
+nav > ul > li > a {
+    background-color: #eee;
+    color: #111;
+    display: block;
+    font-size: 18px;
+    padding: 5px 8px 5px 8px;
+    text-decoration: none;
+}
+
+nav > ul > li > ol > li a {
+    display: block;
+    padding: 5px 8px 5px 18px;
 }
 
 article {
     float: left;
-    width: 700px;
+    padding: 10px;
+    width: 680px;
+}
+
+h1 {
+    font-size: 30px;
 }
