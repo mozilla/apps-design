@@ -48,22 +48,38 @@ table {
 }
 
 /* Main styles */
-
 body {
-    font-family: Arial;
+    background-color: #6a7b86;
+    background-image: url('images/marketplace-header.png');
+    background-repeat: repeat-x;
+    color: #424f5a;
+    font-family: 'Open Sans',"Lucida Sans","Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+}
+
+a {
+    color: #3b9bda;
+    text-decoration: none;
+}
+
+#tabzilla {
+    outline: none;
 }
 
 .wrapper {
+    height: 100%;
     margin: 0 auto;
     position: relative;
     width: 960px;
 }
 
 header, footer {
-    background-color: #eee;
     clear: both;
     float: left;
     width: 100%;
+}
+
+header {
+    margin-bottom: 50px;
 }
 
 header div, footer div {
@@ -72,7 +88,7 @@ header div, footer div {
 
 nav {
     float: left;
-    margin: 10px 10px 10px 0px;
+    padding: 0px 10px 10px 0px;
     width: 240px;
 }
 
@@ -89,17 +105,45 @@ nav > ul > li > a {
     text-decoration: none;
 }
 
+nav > ul > li > ol > li {
+    background-color: #fff;
+}
+
 nav > ul > li > ol > li a {
     display: block;
     padding: 5px 8px 5px 18px;
 }
 
 article {
+    padding: 24px;
+    background-color: rgb(220, 225, 227);
+    background-image: url('images/wallpaper.png');
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.1),
+        0px 0px 0px 1px rgba(0, 0, 0, 0.05),
+        0px 0px 12px 0px rgba(0, 0, 0, 0.05),
+        0px 0px 12px 0px rgba(0, 0, 0, 0.05) inset;
     float: left;
-    padding: 10px;
-    width: 680px;
+    position: relative;
+    width: 662px;
 }
 
 h1 {
-    font-size: 30px;
+    color: rgb(66, 79, 90);
+    font-size: 36px;
+    font-weight: normal;
+    letter-spacing: -1.5px;
+    line-height: 100%;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.browser-support {
+    background-color: #eee;
+    display: block;
+    width: 100%;
+}
+
+.browser-support li {
+    float: left;
+    margin-right: 10px;
 }
