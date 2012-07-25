@@ -3,14 +3,23 @@ layout: nil
 is_index: true
 ---
 
-{% assign article = site.posts.first %}
-
-{% include header.html %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mozilla: App Design Guidelines</title>
+    <meta content="chrome=1" http-equiv="X-UA-Compatible">
+    <link type="text/css" rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div>Mozilla Marketplace</div>
+      </header>
 
 {% include nav.html %}
 
 <article>
-  {{ article.content }}
+  {{ site.posts.first.content }}
 </article>
 
 {% include footer.html %}
