@@ -5,10 +5,12 @@ is_index: true
 
 {% include header.html %}
 
-{% include nav.html %}
+<section>
+  {% include nav.html %}
 
-<article>
-  {{ site.posts.first.content }}
-</article>
+  <article>
+    {{ site.posts.first.content }}
+  </article>
+</section>
 
 {% include footer.html %}
