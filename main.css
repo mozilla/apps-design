@@ -191,6 +191,16 @@ h2 {
     width: 100%;
 }
 
+.sample-run-js p {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.sample-run-js * {
+    outline: none;
+}
+
 pre {
     background-color: #eee;
     overflow: auto;
