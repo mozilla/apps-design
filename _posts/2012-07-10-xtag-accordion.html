@@ -1,0 +1,50 @@
+---
+title: "Accordion"
+layout: xtag
+root: "../"
+description: "An accordion is a collection of panels containing content separated by toggler elements."
+use_it: "Examples of use-cases for an accordion include: a set of step-wise directions, grouping like content elements together, or as a building block for a tabbed viewing interface in a mobile web app."
+dont_use_it: "For information that the users need to access at all times, e.g. a list of possible action."
+tag_js: "http://x-tags.org/elements/accordion/accordion.js"
+tag_css: "http://x-tags.org/elements/accordion/accordion.css"
+---
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+  &lt;x-accordion&gt;
+    &lt;x-toggler selected="true">Toggler 1&lt;/x-toggler&gt;
+    &lt;div&gt;Panel 1&lt;/div&gt;
+    &lt;x-toggler&gt;Toggler 2&lt;/x-toggler&gt;
+    &lt;div&gt;Panel 2&lt;/div&gt;
+    &lt;x-toggler&gt;Toggler 3&lt;/x-toggler&gt;
+    &lt;div&gt;Panel 3&lt;/div&gt;
+  &lt;/x-accordion&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="accordion_demo" class="style">
+    <x-toggler selected="true">Toggler 1</x-toggler>
+    <div>
+      <p>
+        The accordion great for showing users only the content they need to see, while providing users an easy way to access additional content on-demand
+      </p>
+    </div>
+    
+    <x-toggler>Toggler 2</x-toggler>
+    <div>
+      <p>
+        Examples of use-cases for an accordion include: a set of step-wise directions, grouping like content elements together, or as a building block for a tabbed viewing interface in a mobile web app.
+      </p>
+    </div>
+    
+    <x-toggler>Toggler 3</x-toggler>
+    <div>
+      <p>
+        When paired with CSS animations/transitions, you can do things with a few styles that used to require complicated JavaScript and custom code.
+      </p>
+    </div>
+  </x-accordion>
+</div>
