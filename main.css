@@ -88,7 +88,7 @@ header div, footer div {
 
 nav {
     float: left;
-    padding: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 0;
     width: 240px;
 }
 
@@ -101,7 +101,7 @@ nav > ul > li > a {
     color: #111;
     display: block;
     font-size: 18px;
-    padding: 5px 8px 5px 8px;
+    padding: 12px;
     text-decoration: none;
 }
 
@@ -117,38 +117,72 @@ nav > ul > li > ol > li a {
 section {
     background-color: rgb(220, 225, 227);
     background-image: url('images/wallpaper.png');
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
-        0px 2px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 0px 0px 1px rgba(0, 0, 0, 0.05),
-        0px 0px 12px 0px rgba(0, 0, 0, 0.05),
-        0px 0px 12px 0px rgba(0, 0, 0, 0.05) inset;
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.3),
+        0 2px 1px 0 rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(0, 0, 0, 0.05),
+        0 0 12px 0 rgba(0, 0, 0, 0.05),
+        0 0 12px 0 rgba(0, 0, 0, 0.05) inset;
     clear: both;
     float: left;
 }
 
 article {
+    background-color: #fff;
     padding: 24px;
     float: left;
     position: relative;
     width: 662px;
 }
 
-h1 {
+article p {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+h1, h2 {
     color: rgb(66, 79, 90);
     font-size: 36px;
     font-weight: normal;
     letter-spacing: -1.5px;
     line-height: 100%;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+h2 {
+    font-size: 26px;
+    margin: 30px 0 10px 0;
 }
 
 .browser-support {
-    background-color: #eee;
+    clear: both;
     display: block;
+    float: left;
+    margin-bottom: 20px;
     width: 100%;
 }
 
 .browser-support li {
     float: left;
-    margin-right: 10px;
+    margin: 10px 0 10px 0;
+    width: 70px;
+}
+
+.browser-support li img {
+    clear: both;
+    float: left;
+}
+
+.browser-support li span {
+    clear: both;
+    display: block;
+    float: left;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.sample-run-js {
+    clear: both;
+    float: left;
+    margin: 10px 0 20px 0;
+    width: 100%;
 }
