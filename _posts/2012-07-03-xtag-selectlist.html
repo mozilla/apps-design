@@ -2,9 +2,38 @@
 title: "Select List"
 layout: xtag
 root: "../"
-description: "An accordion is a collection of panels containing content separated by toggler elements."
-use_it: "Examples of use-cases for an accordion include: a set of step-wise directions, grouping like content elements together, or as a building block for a tabbed viewing interface in a mobile web app."
-dont_use_it: "For information that the users need to access at all times, e.g. a list of possible action."
-tag_js: "http://x-tags.org/elements/accordion/accordion.js"
-tag_css: "http://x-tags.org/elements/accordion/accordion.css"
+description: "A select list is a popup dialog that presents a list of options related to the current activity. It disables all current activities and only disappears after the user confirms an action or dismisses the dialog. It can include text, image, or both."
+use_it: "When the user has to choose one item from a list"
 ---
+
+<div class="tips">
+  <h2>Do's</h2>
+  <ul>
+    <li>- include a title when possible</li>
+  </ul>
+
+  <h2>Dont's</h2>
+  <ul>
+    <li>- include more than one line of text in each list item</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-toastmessage/">Toast popup</a>, <a href="{{ page.root }}xtag-alertpopup/">Alert popup</a>, <a href="{{ page.root }}xtag-dropdown/">Dropdown Menu</a>
+</p>

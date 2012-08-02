@@ -2,8 +2,38 @@
 title: "Slider"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "A slider lets users adjust and select a value from a predefined range by moving a handle. The changes are immediately noticeable so that the users can fine tune the values accordingly (i.e. brightness)."
+use_it: "When the values are relative to the users and you could provide immediate feedback of the user’s action."
 ---
+
+<div class="tips">
+  <h2>Do's</h2>
+  <ul>
+    <li>- provide a label and define those values</li>
+  </ul>
+
+  <h2>Dont's</h2>
+  <ul>
+    <li>- don't use it when the user probably know the exact target number. Use a text box instead</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-toastmessage/">Picker</a>
+</p>
