@@ -2,8 +2,41 @@
 title: "Toast Message"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "A toast is a small popup that either provides immediate and non-intrusive feedback on the user's action (email saved), or a notification of an event (new email). It contains very few text, does not require user interaction, and automatically disappears after a few seconds. It can include text, image, or both."
+use_it: "When you want to provide information that does not require user input and when you are certain the user is focusing on the screen"
 ---
+
+<div class="tips">
+  <h2>Do's</h2>
+  <ul>
+    <li>- use very little text</li>
+  </ul>
+
+  <h2>Dont's</h2>
+  <ul>
+    <li>- don't use it to provide information irrelevant to the user's activity at that moment</li>
+    <li>- don't use it when action is required. Use an alert or select list instead.</li>
+    <li>- don't use it when the consequence of the user action is serious. Use an alert popup
+instead.</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-alertpopup/">Alert popup</a>, <a href="{{ page.root }}xtag-selectlist/">Select list</a>
+</p>

@@ -135,10 +135,9 @@ article {
 }
 
 article > p {
-    border-bottom: 1px solid #eee;
     font-size: 16px;
     line-height: 19px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 h1, h2 {
@@ -199,6 +198,30 @@ h2 {
 
 .sample-run-js * {
     outline: none;
+}
+
+.tips {
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 95%;
+}
+
+.tips > ul {
+    clear: both;
+    display: block;
+    float: left;
+    padding: 0px 0px 40px 0px;
+    width: 95%;
+}
+
+.tips li {
+    clear: both;
+    display: block;
+    float: left;
+    line-height: 23px;
+    width: 100%;
 }
 
 pre {

@@ -2,8 +2,44 @@
 title: "Alert Popup"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "An alert popup dialog is a small window which demands user's input related to the current activity. It disables all current activities and only disappears after the user confirms an action or dismisses the dialog."
+use_it: "Whe the current activity absolutely requires user input, usually validation (i.e. delete all contacts?) or authorization (i.e. enable GPS?)."
 ---
+
+<div class="tips">
+  <h2>Do's</h2>
+  <ul>
+    <li>- action oriented (i.e. delete all contacts?)</li>
+    <li>- short questions or statements</li>
+    <li>- as a rule of thumb, place the positive button on the right, and the negative button on
+the left</li>
+    <li>- use descriptive, free standing labels such as "Connect"</li>
+  </ul>
+
+  <h2>Dont's</h2>
+  <ul>
+    <li>- don't use negation in your question or statement</li>
+    <li>- don't use it when the action is trivial and reversible. Use a toast instead.</li>
+    <li>- don't use it when you want the user to make a trivial choices. Consider a select list instead.</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-toastmessage/">Toast popup</a>, <a href="{{ page.root }}xtag-selectlist/">Select list</a>
+</p>

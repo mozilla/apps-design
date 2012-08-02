@@ -1,9 +1,41 @@
 ---
-title: "List"
+title: "Plain List"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "A list is a group of vertically arranged elements which can consists of text, icons, checkboxes, radio buttons, etc. A list often has a title and separators."
+use_it: "When you want to organize information for scanning and/or to present options."
 ---
+
+<div class="tips">
+  <h2>Do's</h2>
+  <ul>
+    <li>- use action words whenever possible if users need to make a decision</li>
+    <li>- be concise so it's easy to scan</li>
+    <li>- use a section divider if the items could be grouped</li>
+  </ul>
+
+  <h2>Dont's</h2>
+  <ul>
+    <li>- don't visually overload users by including too much information in one row</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-gridlist/">Grid List</a>
+</p>
