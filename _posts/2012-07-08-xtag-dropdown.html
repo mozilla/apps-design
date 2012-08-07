@@ -2,8 +2,38 @@
 title: "Dropdown Menu"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "A dropdown menu presents a list of options related to the current activity. It is opened when the user touches the dropdown icon. It can include text, image, or both."
+use_it: "When the user has to choose one item from a list."
 ---
+
+<div class="tips">
+  <h2>Do's</h2>
+  <ul>
+    <li>- concise wording. Ex: say "camera" instead of "use camera"</li>
+  </ul>
+
+  <h2>Dont's</h2>
+  <ul>
+    <li>- don’t use it when you have along list (more than 5 items). Use select list instead.</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-timedate/">Time/Date Picker</a>, <a href="{{ page.root }}xtag-selectlist/">Select List</a>
+</p>

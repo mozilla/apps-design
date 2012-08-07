@@ -2,8 +2,33 @@
 title: "Index Scroller"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "An index scroller behaves like a normal scrollable list with information overlay. The overlay label does not appear by default and is triggered by fast swipe. The scrollbar is always present and when overlay label appears, it is attached to the label. The user can drag the scrollbar to quickly jump through categories. This element works for an alphabetical or chronological list."
+use_it: "When you have a long list that can be sorted alphabetically or chronologically or by some other ordered category."
 ---
+
+<div class="tips">
+  <h2>Dont's</h2>
+  <ul>
+    <li>- use it when displaying the date or alphabets do not help the current task.</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-list/">Plain List</a>, <a href="{{ page.root }}xtag-search/">Search</a>
+</p>

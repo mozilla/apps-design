@@ -2,8 +2,33 @@
 title: "Time/Date Picker"
 layout: xtag
 root: "../"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-dont_use_it: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec quam quis purus posuere pellentesque vel ac diam. Aenean sed purus id magna congue accumsan ac et ante."
-code_example: "&lt;x-tag&gt;&lt;/x-tag&gt;"
+description: "A picker allows the users to quickly choose the time, date or other information such as locations from a predefined set of values. It also ensures the data is entered in the correct format."
+use_it: "When you want the user to pick a time, date or other information from a set of values."
 ---
+
+<div class="tips">
+  <h2>Dont's</h2>
+  <ul>
+    <li>- don’t use a picker for action items. Consider dropdown menu or select list instead.</li>
+  </ul>
+</div>
+
+{% include browser.html %}
+
+<h2>Code Example</h2>
+<code>
+  <pre>
+&lt;x-list&gt;
+&lt;/x-list&gt;
+  </pre>
+</code>
+
+<h2>Try It!</h2>
+<div class="sample-run-js">
+  <x-accordion id="list_demo" class="style">
+  </x-accordion>
+</div>
+
+<p>
+  Related: <a href="{{ page.root }}xtag-dropdown/">Dropdown Menu</a>, <a href="{{ page.root }}xtag-selectlist/">Select List</a>
+</p>
